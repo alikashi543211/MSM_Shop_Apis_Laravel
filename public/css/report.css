@@ -1,0 +1,144 @@
+ /**
+                Set the margins of the page to 0, so the footer and the header
+                can be of the full height and width !
+             **/
+             @page {
+                margin: 0cm 0cm;
+            }
+
+            /** Define now the real margins of every page in the PDF **/
+            body {
+                margin-top: 3cm;
+                margin-left: 2cm;
+                margin-right: 2cm;
+                margin-bottom: 2cm;
+            }
+
+            /** Define the header rules **/
+            header {
+                position: fixed;
+                top: 0cm;
+                left: 0cm;
+                right: 0cm;
+                height: 2.5cm;
+            }
+
+            /** Define the footer rules **/
+            footer {
+                position: fixed;
+                bottom: 0cm;
+                left: 0cm;
+                right: 0cm;
+                height: 2cm;
+            }
+
+            .center {
+                text-align: center;
+
+            }
+
+            .moveimage {
+                position: relative;
+                top: 10px;
+                left: 900px
+            }
+
+            .move_footer_image {
+                position: relative;
+                bottom: 50px;
+                left: 150px
+            }
+
+            .move_td {
+                position: relative;
+                top: 20px;
+                right: 550px;
+
+            }
+
+            .move_site_td {
+                position: relative;
+                bottom: 20px;
+                right: 600px;
+
+            }
+
+            .email_td {
+                position: relative;
+                top: 10px;
+                right: 550px
+            }
+
+         /* .doc_ref {
+                position: relative;
+                bottom: 50px;
+                padding: 10px;
+                padding-top: 40px;
+                left: 950px
+            } */
+
+
+             hr.someClass {
+                background-color: orange;
+                width: 100%;
+                height: 5px;
+                border-top: 1px solid orange;
+                border: none
+            }
+
+            /* tr li{
+                display: inline;
+            } */
+            .wrap {
+                display: flex;
+                align-items: center;
+            }
+
+            .red {
+                color: red
+            }
+
+            .element1 {
+                display: inline-block;
+            }
+
+            #element2 {
+                display: inline-block;
+            }
+
+            ul {
+                /* list-style-type: circle;
+                padding: 0px;
+                margin-left: 25px; */
+                /* list-style: none; */
+
+                list-style: url('../circle.svg');
+                /* list-style-type: circle; */
+                padding: 0px;
+                margin: 0px;
+            }
+            /* ul.image {
+                list-style-image: url('/admin_theme/circle.svg');
+                } */
+
+            ul.columns>li {
+                display: inline-block;
+                margin-left: 25px;
+
+            }
+
+            ul.columns>li:before {
+
+                display: list-item;
+                position: absolute;
+                color: orange;
+                font-weight: bold;
+                content: "";
+                /* font-size:10px */
+
+            }
+
+            element.style {
+                margin-left: 0px;
+                list-style: none;
+            }
